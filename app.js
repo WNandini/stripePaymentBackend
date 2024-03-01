@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const stripe = require("stripe")("sk_test_51Kl4flSDZlNeYvugVJQ9Rj2S4AnWtraRuyqtdPwK23MoVXxbijC8K6vIutg6hksgChpUne1wSusgnaKJY5usduOo00U8fYNGNI");
+const stripe = require("stripe")(process.env.STRIPE_KEY);
 const PORT = process.env.PORT || 7000
 
 app.use(express.json());
