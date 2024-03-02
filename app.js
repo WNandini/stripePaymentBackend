@@ -26,8 +26,8 @@ app.post("/api/create-checkout-session", async(req, res) => {
         payment_method_types: ["card"],
         line_items: lineItems,
         mode: 'payment',
-        success_url: 'https://65e1b7998e48cebc6896d20c--preeminent-buttercream-e1f1d9.netlify.app/success',
-        cancel_url: 'https://65e1b7998e48cebc6896d20c--preeminent-buttercream-e1f1d9.netlify.app/cancel' 
+        success_url: 'https://65e319561a90c3b278a465d9--chic-praline-5d82a9.netlify.app/success',
+        cancel_url: 'https://65e319561a90c3b278a465d9--chic-praline-5d82a9.netlify.app/cancel' 
     })
 
     res.json({id: session.id})
