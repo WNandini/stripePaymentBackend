@@ -17,9 +17,9 @@ app.post("/api/create-checkout-session", async(req, res) => {
             product_data: {
                 name: products.name
             },
-            unit_amount: products.price
+            unit_amount: products.price * 100
         },
-        quantity: products.qty
+        quantity: products.qty - 1
     }]
 
     const session = await stripe.checkout.sessions.create({
